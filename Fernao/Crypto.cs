@@ -70,7 +70,7 @@
                     baos.write(aux, 0, readBytes);
                 }
 
-                var outputFile = string.Concat(Path.Combine(Path.GetDirectoryName(retornoFilePath), fileName), ".out");
+                var outputFile = string.Concat(Path.Combine(Path.GetDirectoryName(retornoFilePath), Path.GetFileNameWithoutExtension(fileName)), ".out.RET");
                 File.WriteAllText(outputFile, baos.toString());
 
                 wis.close();
