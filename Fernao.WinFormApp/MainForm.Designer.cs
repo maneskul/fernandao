@@ -72,9 +72,9 @@
             this.labelPassword.AutoSize = true;
             this.labelPassword.Location = new System.Drawing.Point(34, 20);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(193, 13);
+            this.labelPassword.Size = new System.Drawing.Size(132, 13);
             this.labelPassword.TabIndex = 5;
-            this.labelPassword.Text = "Senha para criptografar/descriptografar";
+            this.labelPassword.Text = "Senha para decodificação";
             // 
             // openFileDialogForFile
             // 
