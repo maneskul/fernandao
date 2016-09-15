@@ -48,9 +48,11 @@
             }
 
             var fullPath = Path.Combine(fileName, outputFolder);
+            
+            throw new NotImplementedException("need to finish");
         }
 
-        public void DecodeAndSaveFile(string retornoFilePath)
+        public string DecodeAndSaveFile(string retornoFilePath)
         {
             var key = this.GetCryptKey();
             var fileName = Path.GetFileName(retornoFilePath);
@@ -74,6 +76,8 @@
                 File.WriteAllText(outputFile, baos.toString());
 
                 wis.close();
+
+                return outputFile;
             }
             catch (Exception ex)
             {

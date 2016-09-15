@@ -24,7 +24,6 @@
                 var crypto = new Crypto(production, crytpoFile, pass);
 
                 if (validRemessafile) crypto.CryptoAndSaveFile(remessa);
-
                 if (validRetorno) crypto.DecodeAndSaveFile(retorno);
             }
             else Console.WriteLine("Arquivo de criptografia é obrigatório para realizar as operações");
