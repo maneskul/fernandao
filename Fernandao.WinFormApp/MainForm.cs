@@ -3,6 +3,7 @@
     using System;
     using System.IO;
     using System.Windows.Forms;
+    using Fernandao.Lib;
 
     public partial class MainForm : Form
     {
@@ -21,9 +22,18 @@
 
                 var fileExists = File.Exists(validFile);
 
-                if (fileExists) this.crypto = new Crypto(true, validFile, this.textBoxPassword.Text);
-                else MessageBox.Show("Arquivo selecionado não existe ou é protegido contra leitura");
+                if (fileExists)
+                {
+                    this.crypto = new Crypto(true, validFile, this.textBoxPassword.Text.Trim());
+                    this.btnOpenCryptoFile.Text = $"Arquivo {validFile} carregado";
+                    this.btnOpenCryptoFile.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Arquivo selecionado não existe ou é protegido contra leitura");
+                }
             }
+
         }
 
         private void btnOpenFileToProcess_Click(object sender, EventArgs e)
@@ -95,6 +105,11 @@
                 }
                 else MessageBox.Show("Arquivo selecionado não existe ou é protegido contra leitura.");
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

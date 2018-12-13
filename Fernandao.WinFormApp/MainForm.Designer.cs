@@ -41,7 +41,7 @@
             // 
             // openFileDialogForCrypto
             // 
-            this.openFileDialogForCrypto.FileName = "openFileDialogForCrypto";
+            this.openFileDialogForCrypto.Filter = ".bin Files|*.bin";
             // 
             // btnOpenCryptoFile
             // 
@@ -67,7 +67,7 @@
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(12, 27);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '#';
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(335, 20);
             this.textBoxPassword.TabIndex = 4;
             // 
@@ -82,7 +82,7 @@
             // 
             // openFileDialogForFile
             // 
-            this.openFileDialogForFile.FileName = "openFileDialogForFile";
+            this.openFileDialogForFile.Filter = ".rem or .ret|*.rem;*.ret";
             // 
             // button1
             // 
@@ -101,7 +101,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "v2.0";
+            this.label1.Text = "v2.1";
             // 
             // MainForm
             // 
@@ -119,7 +119,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Criptografia Bradesco - v2.0";
+            this.Text = "Criptografia Bradesco - v2.1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,4 +1,4 @@
-﻿namespace Fernandao
+﻿namespace Fernandao.Lib
 {
     using System;
     using System.IO;
@@ -47,7 +47,7 @@
                 throw new Exception(string.Format("Erro ao iniciar o Output Stream para salvar o arquivo em {0}", path));
             }
 
-            var fullPath = Path.Combine(fileName, outputFolder);
+            var fullPath = Path.Combine(fileName, outputFolder, finalFileName);
 
             return fullPath;
         }
