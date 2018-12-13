@@ -85,9 +85,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Fernao\Fernao.csproj">
+    <ProjectReference Include="..\Fernandao\Fernandao.csproj">
       <Project>{3acacd32-dee3-4683-a953-4ab60e59ebe5}</Project>
-      <Name>Fernao</Name>
+      <Name>Fernandao</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

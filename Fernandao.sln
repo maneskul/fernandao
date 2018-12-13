@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fernao", "Fernao\Fernao.csproj", "{3ACACD32-DEE3-4683-A953-4AB60E59EBE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fernandao", "Fernandao\Fernandao.csproj", "{3ACACD32-DEE3-4683-A953-4AB60E59EBE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fernao.WinFormApp", "Fernao.WinFormApp\Fernao.WinFormApp.csproj", "{9E8C9F92-5E01-4F38-A523-8E3BDBEE4455}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fernandao.WinFormApp", "Fernandao.WinFormApp\Fernandao.WinFormApp.csproj", "{9E8C9F92-5E01-4F38-A523-8E3BDBEE4455}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {444AFEC9-C3D9-43B9-8889-406B49F4CA87}
 	EndGlobalSection
 EndGlobal

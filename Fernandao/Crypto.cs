@@ -1,4 +1,4 @@
-﻿namespace Fernao
+﻿namespace Fernandao
 {
     using System;
     using System.IO;
@@ -16,7 +16,7 @@
         private string cryptoFile;
         private string password;
 
-        public void CryptoAndSaveFile(string remessaFilePath)
+        public string CryptoAndSaveFile(string remessaFilePath)
         {
             var key = this.GetCryptKey();
             var fileName = Path.GetFileName(remessaFilePath);
@@ -48,8 +48,8 @@
             }
 
             var fullPath = Path.Combine(fileName, outputFolder);
-            
-            throw new NotImplementedException("need to finish");
+
+            return fullPath;
         }
 
         public string DecodeAndSaveFile(string retornoFilePath)

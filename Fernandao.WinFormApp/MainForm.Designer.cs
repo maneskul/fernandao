@@ -1,4 +1,4 @@
-﻿namespace Fernao.WinFormApp
+﻿namespace Fernandao.WinFormApp
 {
     partial class MainForm
     {
@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.openFileDialogForCrypto = new System.Windows.Forms.OpenFileDialog();
             this.btnOpenCryptoFile = new System.Windows.Forms.Button();
             this.btnOpenFileToProcess = new System.Windows.Forms.Button();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.openFileDialogForFile = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialogForCrypto
@@ -42,9 +45,9 @@
             // 
             // btnOpenCryptoFile
             // 
-            this.btnOpenCryptoFile.Location = new System.Drawing.Point(34, 69);
+            this.btnOpenCryptoFile.Location = new System.Drawing.Point(12, 60);
             this.btnOpenCryptoFile.Name = "btnOpenCryptoFile";
-            this.btnOpenCryptoFile.Size = new System.Drawing.Size(193, 43);
+            this.btnOpenCryptoFile.Size = new System.Drawing.Size(335, 43);
             this.btnOpenCryptoFile.TabIndex = 2;
             this.btnOpenCryptoFile.Text = "Arquivo criptografia .bin";
             this.btnOpenCryptoFile.UseVisualStyleBackColor = true;
@@ -52,45 +55,71 @@
             // 
             // btnOpenFileToProcess
             // 
-            this.btnOpenFileToProcess.Location = new System.Drawing.Point(34, 118);
+            this.btnOpenFileToProcess.Location = new System.Drawing.Point(12, 109);
             this.btnOpenFileToProcess.Name = "btnOpenFileToProcess";
-            this.btnOpenFileToProcess.Size = new System.Drawing.Size(193, 43);
+            this.btnOpenFileToProcess.Size = new System.Drawing.Size(160, 43);
             this.btnOpenFileToProcess.TabIndex = 3;
-            this.btnOpenFileToProcess.Text = "Arquivo para processar";
+            this.btnOpenFileToProcess.Text = "Descriptografar";
             this.btnOpenFileToProcess.UseVisualStyleBackColor = true;
             this.btnOpenFileToProcess.Click += new System.EventHandler(this.btnOpenFileToProcess_Click);
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(34, 36);
+            this.textBoxPassword.Location = new System.Drawing.Point(12, 27);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(193, 20);
+            this.textBoxPassword.PasswordChar = '#';
+            this.textBoxPassword.Size = new System.Drawing.Size(335, 20);
             this.textBoxPassword.TabIndex = 4;
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(34, 20);
+            this.labelPassword.Location = new System.Drawing.Point(12, 11);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(132, 13);
+            this.labelPassword.Size = new System.Drawing.Size(41, 13);
             this.labelPassword.TabIndex = 5;
-            this.labelPassword.Text = "Senha para decodificação";
+            this.labelPassword.Text = "Senha:";
             // 
             // openFileDialogForFile
             // 
             this.openFileDialogForFile.FileName = "openFileDialogForFile";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(178, 109);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(169, 43);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Criptografar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(314, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "v2.0";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 193);
+            this.ClientSize = new System.Drawing.Size(354, 179);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.btnOpenFileToProcess);
             this.Controls.Add(this.btnOpenCryptoFile);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Criptografia Bradesco - v2.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +133,7 @@
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.OpenFileDialog openFileDialogForFile;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

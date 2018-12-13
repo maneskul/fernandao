@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Fernao.WinFormApp
+namespace Fernandao.WinFormApp
 {
     static class Program
     {

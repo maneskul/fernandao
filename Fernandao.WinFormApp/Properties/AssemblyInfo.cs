@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Fernao")]
+[assembly: AssemblyTitle("Fernandao.WinFormApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Fernao")]
+[assembly: AssemblyProduct("Fernandao.WinFormApp")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3acacd32-dee3-4683-a953-4ab60e59ebe5")]
+[assembly: Guid("9e8c9f92-5e01-4f38-a523-8e3bdbee4455")]
 
 // Version information for an assembly consists of the following four values:
 //
