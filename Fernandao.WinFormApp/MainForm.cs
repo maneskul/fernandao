@@ -25,8 +25,12 @@
                 if (fileExists)
                 {
                     this.crypto = new Crypto(true, validFile, this.textBoxPassword.Text.Trim());
+
                     this.btnOpenCryptoFile.Text = $"Arquivo {validFile} carregado";
                     this.btnOpenCryptoFile.Enabled = false;
+
+                    this.btnDecryptFile.Enabled = true;
+                    this.btnEncryptFile.Enabled = true;
                 }
                 else
                 {
@@ -107,7 +111,14 @@
             }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void btnSavePassword_click(object sender, EventArgs e)
+        {
+            this.btnOpenCryptoFile.Enabled = true;
+            this.savePassword.Enabled = false;
+            this.textBoxPassword.Enabled = false;
+        }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
